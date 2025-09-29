@@ -19,4 +19,21 @@ Screenshots of the site across devices are included in the _images folder.
 I tested responsiveness using browser dev tools for desktop, tablet, and mobile views. Buttons, forms, images, and text scale correctly.
 
 The website is visually consistent, responsive, and ready for submission.
+
+
+REPOSOTORY LINK
 https://github.com/ST10447349/poe_par2.git
+
+
+
+REFERENCE LIST
+1.	Beaird, J. & George, J., 2020. The Principles of Beautiful Web Design. 4th ed. San Francisco: SitePoint.
+2.	W3Schools, 2025. CSS Tutorial. [online] Available at: https://www.w3schools.com/css/ [Accessed 29 September 2025].
+3.	MDN Web Docs, 2025. Responsive design. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design [Accessed 29 September 2025].
+4.	Box, R., 2022. Web Typography: Practical Guide. London: Routledge.
+5.	Nielsen, J., 2023. Usability Heuristics for User Interface Design. [online] Nielsen Norman Group. Available at: https://www.nngroup.com/articles/ten-usability-heuristics/ [Accessed 29 September 2025].
+
+7.	United Nations, 2023. Climate Change Education Resources. [online] Available at: https://www.un.org/en/climatechange/education [Accessed 29 September 2025].
+8.	Google Fonts, 2025. Montserrat and Open Sans. [online] Available at: https://fonts.google.com/ [Accessed 29 September 2025].
+9.	FontAwesome, 2025. Icons for Websites. [online] Available at: https://fontawesome.com/ [Accessed 29 September 2025].
+10.	PayFast, 2025. Online Payment Solutions for South Africa. [online] Available at: https://www.payfast.co.za/ [Accessed 29 September 2025].
