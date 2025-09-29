@@ -19,3 +19,4 @@ Screenshots of the site across devices are included in the _images folder.
 I tested responsiveness using browser dev tools for desktop, tablet, and mobile views. Buttons, forms, images, and text scale correctly.
 
 The website is visually consistent, responsive, and ready for submission.
+
