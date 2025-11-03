@@ -51,6 +51,8 @@ Changelog
     - Updated image paths that previously caused 404s.
     - Documented each change here with detail for lecturer review.
 
+      Github link:https://github.com/ST10447349/poe_par2.git 
+
 References
 - Leaflet.js — https://leafletjs.com/ 
 - MDN Web Docs — HTML, CSS, JavaScript, Form validation
