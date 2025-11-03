@@ -1,0 +1,89 @@
+
+
+:root{
+  --bg:#fafafa;
+  --card:#fff;
+  --muted:#666;
+  --accent:#2b7cff;
+  --max-width:900px;
+  --gap:1rem;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#222;
+  margin:0;
+  padding:1rem;
+  line-height:1.45;
+}
+
+header{
+  max-width:var(--max-width);
+  margin:0 auto 1rem;
+  padding:0.5rem 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+}
+header h1{font-size:1.25rem;margin:0}
+nav a{color:var(--accent);text-decoration:none;margin-right:0.5rem}
+nav a:hover{text-decoration:underline}
+
+main{
+  max-width:var(--max-width);
+  margin:0 auto;
+  background:transparent;
+  padding:0 0.5rem 2rem;
+}
+
+/* Sections */
+section{background:transparent;margin-bottom:1.25rem;padding:0.5rem 0}
+.intro p.note{color:var(--muted);font-size:0.95rem}
+.features ul{padding-left:1.25rem}
+
+/* Gallery */
+.gallery{display:flex;gap:0.5rem;margin-top:0.5rem}
+.gallery img{width:140px;height:90px;object-fit:cover;border-radius:6px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)}
+.hint{color:var(--muted);font-size:0.95rem}
+
+/* Forms */
+form{background:var(--card);padding:1rem;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+label{display:block;margin-top:0.5rem;font-weight:600}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="search"], select, textarea{
+  width:100%;
+  padding:0.5rem;
+  margin-top:0.25rem;
+  border:1px solid #ddd;
+  border-radius:4px;
+  font-size:1rem;
+  background:#fff;
+}
+button{margin-top:0.75rem;padding:0.6rem 0.9rem;background:var(--accent);color:#fff;border:none;border-radius:5px;cursor:pointer}
+button:hover{opacity:0.95}
+
+/* Response boxes */
+.form-error{color:#b00020;font-size:0.95rem;margin-top:0.35rem}
+[aria-live]{margin-top:0.75rem;padding:0.5rem;background:#fff;border-radius:4px;border:1px solid #eee}
+
+/* Events list */
+.events-list{list-style:none;padding:0;margin-top:0.5rem}
+.events-list li{background:var(--card);padding:0.7rem;border-radius:6px;margin-bottom:0.5rem;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
+.events-list .small{color:var(--muted);font-size:0.95rem;margin:0.35rem 0 0}
+
+/* Footer */
+footer{max-width:var(--max-width);margin:1.5rem auto;color:var(--muted);font-size:0.95rem;padding:0 0.5rem}
+
+/* Lightbox defaults (tiny) */
+.simple-lightbox{transition:opacity 200ms ease}
+.simple-lightbox img{border-radius:6px}
+
+/* Responsive tweaks */
+@media (max-width:600px){
+  .gallery{flex-wrap:wrap}
+  .gallery img{width:48%}
+  header{flex-direction:column;align-items:flex-start}
+}

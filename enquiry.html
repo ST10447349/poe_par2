@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Enquire — POE PAR2</title>
+  <meta name="description" content="Enquire about services, volunteering or sponsorship with POE PAR2. Use the form to get a quick availability/cost estimate." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Make an Enquiry</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="events.html">Events</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="enquiry-intro">
+      <h2>What would you like to enquire about?</h2>
+      <p>Please complete the form below — fields marked with * are required. After validation, a short response about cost/availability will appear in the page.</p>
+    </section>
+
+    <section id="enquiry-form">
+      <form id="enquiryForm" action="#" method="post" novalidate>
+        <label for="name">Full name *</label>
+        <input type="text" id="name" name="name" minlength="2" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s\-]{7,20}$" placeholder="+27 618904536" />
+
+        <label for="enquiryType">Enquiry type *</label>
+        <select id="enquiryType" name="enquiryType" required>
+          <option value="">-- Select --</option>
+          <option value="service">Service / Product</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="sponsor">Sponsorship</option>
+        </select>
+
+        <label for="details">Details (describe what you're interested in) *</label>
+        <textarea id="details" name="details" rows="6" minlength="10" required></textarea>
+
+        <label for="date">Preferred date (optional)</label>
+        <input type="date" id="date" name="date" />
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
+
+      <div id="enquiryResponse" aria-live="polite" hidden></div>
+    </section>
+
+    <section id="map" style="height:300px;margin-top:2rem;">
+      <h2>Our location</h2>
+      <div id="leafletMap" style="height:260px;"></div>
+    </section>
+
+  </main>
+
+  
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initMap('leafletMap', {lat:51.5074, lng:-0.1278}, "Johannesburg");
+      initForms();
+    });
+  </script>
+</body>
+</html>

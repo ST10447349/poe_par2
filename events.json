@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Community Clean-up",
+      "date": "2025-11-15",
+      "location": "City Park",
+      "summary": "Volunteer-led clean-up of the central park. Bring gloves; refreshments provided."
+    },
+    {
+      "id": 2,
+      "title": "Fundraising Fun Run",
+      "date": "2025-12-05",
+      "location": "Riverside",
+      "summary": "Family-friendly 5K run to raise funds for local projects. Registration required."
+    },
+    {
+      "id": 3,
+      "title": "Volunteer Induction Evening",
+      "date": "2025-11-20",
+      "location": "Community Hall",
+      "summary": "Info session and short training for new volunteers."
+    },
+    {
+      "id": 4,
+      "title": "Sponsor Meet & Greet",
+      "date": "2025-12-10",
+      "location": "Conference Room A",
+      "summary": "Presentations and Q&A for potential sponsors and partners."
+    }
+  ]
+}

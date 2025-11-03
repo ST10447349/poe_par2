@@ -1,57 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoFuture SA | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <meta name="description" content="Student project site for POE PART3. Small site showing HTML, CSS and JS examples, forms and basic SEO." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-    <header>
-        <h1>EcoFuture SA</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="events.html">Events</a> |
+      <a href="enquiry.html">Enquiry</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/hero.jpg" alt="EcoFuture SA Hero">
-            <div class="hero-text">
-                <h2>Inspiring Communities to Act on Climate Change</h2>
-                <p>Join our mission to educate, empower, and make a greener future possible.</p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn">Volunteer</a>
-                    <a href="contact.html" class="btn btn-donate">Donate</a>
-                </div>
-            </div>
-        </section>
+  <main>
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>Hi — welcome to my POE PARt 3 assignment. It's a simple static project that demonstrates HTML structure, responsive CSS, and client-side JavaScript (forms, a map, and a small gallery). I kept the code readable and commented so it's easy to follow.</p>
+      <p class="note">Student project — replace example emails/URLs if you deploy this publicly.</p>
+    </section>
 
-        <section class="impact">
-            <div class="impact-card">
-                <h3>120+</h3>
-                <p>Volunteers Mobilised</p>
-            </div>
-            <div class="impact-card">
-                <h3>3500+</h3>
-                <p>Trees Planted</p>
-            </div>
-            <div class="impact-card">
-                <h3>50+</h3>
-                <p>Community Projects</p>
-            </div>
-        </section>
-    </main>
+    <section class="features">
+      <h2>What you can try here</h2>
+      <p>Below are the main interactive features I implemented — try them out and see the code in the assets folder.</p>
+      <ul>
+        <li>Enquiry form — shows a cost/availability response.</li>
+        <li>Contact form — builds a mailto: so you can open it in your email client.</li>
+        <li>Events list — client-side search/filter with JSON loading.</li>
+        <li>Leaflet map — simple location marker.</li>
+        <li>Gallery with a lightweight lightbox.</li>
+      </ul>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 EcoFuture SA. All Rights Reserved.</p>
-    </footer>
+    <section class="quick-links">
+      <h2>Quick links</h2>
+      <p>
+        <a href="enquiry.html">Make an enquiry</a> |
+        <a href="events.html">See events</a> |
+        <a href="contact.html">Contact</a>
+      </p>
+    </section>
+
+    <section class="demo-gallery">
+      <h2>Mini gallery</h2>
+      <div class="gallery" aria-label="Demo images">
+        <img src="assets/images/photo1-small.jpg" data-large="assets/images/photo1.jpg" alt="Example image 1" />
+        <img src="assets/images/photo2-small.jpg" data-large="assets/images/photo2.jpg" alt="Example image 2" />
+        <img src="assets/images/photo3-small.jpg" data-large="assets/images/photo3.jpg" alt="Example image 3" />
+      </div>
+      <p class="hint">Click an image to open the lightbox.</p>
+    </section>
+  </main>
+
+  
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.initGallery) window.initGallery('.gallery');
+    });
+  </script>
 </body>
 </html>

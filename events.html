@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Events — POE PAR2</title>
+  <meta name="description" content="Filter and search events on the client side." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Events</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="enquiry.html">Enquiry</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Upcoming events</h2>
+      <p>Use the search box to filter events. The list is loaded from assets/data/events.json using loadPosts().</p>
+
+      <label for="searchEvents">Search events</label>
+      <input id="searchEvents" type="search" placeholder="Type to filter events..." />
+
+      <ul id="eventsList" class="events-list" aria-live="polite"></ul>
+    </section>
+
+    <section>
+      <h2>Want to join?</h2>
+      <p>If you're interested in any event, use the <a href="enquiry.html">enquiry form</a> and choose "Volunteer" or "Sponsorship". The enquiry logic shows a quick response in the page after validation.</p>
+    </section>
+  </main>
+
+  
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.loadPosts) {
+        window.loadPosts('assets/data/events.json', '#eventsList');
+      } else {
+        console.warn('loadPosts() not available; ensure main.js is updated');
+      }
+      if (window.initSearch) window.initSearch('#searchEvents', '#eventsList');
+    });
+  </script>
+</body>
+</html>
